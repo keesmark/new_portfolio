@@ -13,3 +13,6 @@ $(document).ready(function(){
  decimals: 0,
  });
 });
+$(function()  {
+	document.getElementById("idDynamicYear").innerText = ( new Date().getFullYear() ).toString();
+});
