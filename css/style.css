@@ -7,12 +7,15 @@ Katsuhisa Hata \(^o^)/
 ----------------
 -----------------*/
 
-
 /* common------------------------------
 --------------------------------------*/
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 .h2 {
   font-size: 40px;
-  font-family: "impact";
+  font-family: "Roboto", sans-serif;
   color: #000;
   text-align: center;
   margin: 50px auto;
@@ -41,7 +44,7 @@ header #logo {
   justify-content: center;
 }
 header #logo a {
-  font-family: "impact";
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-size: 40px;
   color: #fff;

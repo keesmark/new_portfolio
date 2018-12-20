@@ -1,11 +1,16 @@
 @charset "utf-8";
+$font_family: 'Noto Sans JP', sans-serif;
+$font_family_h2: 'Roboto', sans-serif;
 $font_size: 20px;
 $font_color: #000;
 /* common------------------------------
 --------------------------------------*/
+body {
+	font-family: $font_family;
+}
 .h2 {
 	font-size: 40px;
-	font-family: "impact";
+	font-family: $font_family_h2;
 	color: $font_color;
 	text-align: center;
 	margin: 50px auto;
@@ -33,7 +38,7 @@ header {
 		display: flex;
     justify-content: center;
     a {
-    	font-family: "impact";
+    	font-family: $font_family_h2;
     	text-decoration: none;
     	font-size: 40px;
     	color: #fff;
