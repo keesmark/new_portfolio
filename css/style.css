@@ -9,11 +9,6 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 960px) {
-  .h2 {
-    font-size: 50px;
-  }
-}
 /* header------------------------------
 --------------------------------------*/
 header {
@@ -95,19 +90,19 @@ header nav ul li a {
   font-weight: 700;
 }
 header nav ul li:last-child {
-  font-size: 15px;
+  font-size: 10px;
   display: flex;
   justify-content: center;
 }
 header nav ul li:last-child a {
-  font-size: 15px;
+  font-size: 10px;
 }
 header nav #sns_nav {
   display: flex;
   justify-content: center;
   margin: 50px auto 0 auto;
   width: 200px;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   padding-bottom: 50px;
 }
 header nav #sns_nav li {
@@ -196,24 +191,6 @@ header nav #sns_nav li a i {
   margin-bottom: 10px;
 }
 
-@media (min-width: 960px) {
-  #about #about_wrapper {
-    width: 80%;
-    flex-direction: row;
-    align-items: flex-end;
-  }
-  #about #about_wrapper #about_img {
-    width: 40%;
-  }
-  #about #about_wrapper #about_dis {
-    width: 60%;
-  }
-}
-@media (min-width: 960px) and (max-width: 1100px) {
-  #about #about_wrapper {
-    width: 90%;
-  }
-}
 /* skill------------------------------
 --------------------------------------*/
 #skill #skill_box {
@@ -227,13 +204,12 @@ header nav #sns_nav li a i {
   margin-bottom: 20px;
 }
 #skill #skill_box #skill_li {
-  border: 3px solid #fff;
+  border: 1px solid #fff;
   background-color: rgba(255, 255, 255, 0.3);
-  padding: 30px;
+  padding: 20px;
   width: 200px;
   margin: 0 auto;
   text-align: center;
-  font-size: 1em;
 }
 #skill #skill_box #skill_li ul {
   color: #fff;
@@ -245,22 +221,14 @@ header nav #sns_nav li a i {
   margin-bottom: 0;
 }
 
-@media (min-width: 960px) {
-  #skill #skill_box {
-    padding: 100px;
-  }
-  #skill #skill_box #skill_li {
-    vertical-align: center;
-    font-size: 1.2em;
-  }
-}
 /* skillbar------------------------------
 --------------------------------------*/
 #skill_bar {
   width: 90%;
   margin: 0 auto;
 }
-#skill_bar .skillbar {
+
+.skillbar {
   position: relative;
   display: inline-block;
   margin: 10px auto;
@@ -270,7 +238,8 @@ header nav #sns_nav li a i {
   width: 100%;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12) inset;
 }
-#skill_bar .skillbar .skillbar-title {
+
+.skillbar-title {
   position: absolute;
   top: 0;
   left: 0;
@@ -285,14 +254,16 @@ header nav #sns_nav li a i {
   height: 40px;
   line-height: 40px;
 }
-#skill_bar .skillbar .skillbar-bar {
+
+.skillbar-bar {
   height: 40px;
   width: 0;
   background: #6adcfa;
   border-radius: 3px;
   display: inline-block;
 }
-#skill_bar .skillbar .skill-bar-percent {
+
+.skill-bar-percent {
   position: absolute;
   right: 10px;
   top: 0;
@@ -303,11 +274,6 @@ header nav #sns_nav li a i {
   color: rgba(0, 0, 0, 0.4);
 }
 
-@media (min-width: 960px) {
-  #skill_bar {
-    width: 60%;
-  }
-}
 /* work------------------------------
 --------------------------------------*/
 #work #work_wrapper {
@@ -340,23 +306,6 @@ header nav #sns_nav li a i {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-@media (min-width: 768px) and (max-width: 960px) {
-  #work #work_wrapper {
-    width: 60%;
-  }
-}
-@media (min-width: 960px) {
-  #work #work_wrapper {
-    width: 90%;
-    display: flex;
-  }
-  #work #work_wrapper a:hover p {
-    display: inline-block;
-  }
-  #work #work_wrapper .work_li p {
-    display: none;
-  }
-}
 /* contact------------------------------
 --------------------------------------*/
 #contact {
@@ -379,26 +328,9 @@ header nav #sns_nav li a i {
   color: #000;
 }
 #contact #contact_from {
-  text-align: center;
-}
-#contact #contact_from #contact_dis {
-  padding: 30px;
-  font-size: 20px;
-  line-height: 1.4em;
-  margin: 0 auto;
-}
-#contact #contact_from a {
-  display: inline-block;
-  margin-top: 50px;
-  font-size: 20px;
-  color: #000;
-  text-decoration: none;
-  border: 2px solid #000;
-  padding: 20px;
-}
-#contact #contact_from a:hover {
-  background-color: #363434;
-  color: #fff;
+  border: 1px solid #000;
+  height: 500px;
+  width: 100%;
 }
 
 /* footer------------------------------
@@ -421,7 +353,6 @@ footer small a {
 #wrapper {
   width: 90%;
   margin: 0 auto;
-  text-align: center;
 }
 #wrapper .h2 {
   margin-top: 100px;
@@ -435,9 +366,8 @@ footer small a {
   height: auto;
 }
 #wrapper #work_spec {
-  border: 2px solid #000;
+  border: 1px solid #000;
   padding: 20px;
-  margin-top: 50px;
 }
 #wrapper #work_spec ul {
   text-align: center;
@@ -449,30 +379,4 @@ footer small a {
 }
 #wrapper #work_spec ul li:last-child {
   margin-bottom: 0;
-}
-#wrapper #work_btn {
-  border: 1px solid #000;
-  padding: 20px;
-  display: inline-block;
-  background-color: #363434;
-}
-#wrapper #work_btn a {
-  text-decoration: none;
-  font-weight: 700;
-  color: #fff;
-}
-#wrapper #work_btn:hover {
-  background-color: #fff;
-}
-#wrapper #work_btn:hover a {
-  color: #000;
-}
-
-@media (min-width: 768px) {
-  #work_spec {
-    width: 50%;
-    margin: 0 auto;
-    font-size: 1.2em;
-    font-weight: 700;
-  }
 }

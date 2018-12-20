@@ -4,11 +4,6 @@ $(function(){
 		$("nav").fadeToggle(500);
 	});
 });
-$(function() {
- $("nav ul li a").click(function() {
-   $("nav").fadeToggle(500);
- });
-});
 //skillbar
 $(document).ready(function(){
  $('.skillbar').skillBars({
