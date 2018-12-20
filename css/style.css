@@ -353,6 +353,9 @@ header nav #sns_nav li a i {
   #work #work_wrapper a:hover p {
     display: inline-block;
   }
+  #work #work_wrapper .work_li {
+    margin-right: 10px;
+  }
   #work #work_wrapper .work_li p {
     display: none;
   }
